@@ -20,18 +20,19 @@ Currently only manual installation is provided. I'd gladly accept pull requests 
 
 windows tl;dr
 
-* copy %appdata%/Roaming/.minecraft/versions/1.8.9 to %appdata%/Roaming/.minecraft/versions/1.8.9-horse-stats
-* rename 1.8.9.jar and 1.8.9.json to 1.8.9-horse-stats.jar and 1.8.9-horse-stats.json 
-* change the `id` field in 1.8.9-horse-stats.json from `1.8.9` to `1.8.9-horse-stats`
-* `open archive` 1.8.9-horse-stats.jar with 7zip
-* delete META-INF folder
-* drag azb.class into archive, then close 7zip
+* Create new 'version' of minecraft
+  * copy `%appdata%/Roaming/.minecraft/versions/1.8.9` to `%appdata%/Roaming/.minecraft/versions/1.8.9-horse-stats`
+  * rename `1.8.9.jar` and `1.8.9.json` to `1.8.9-horse-stats.jar` and `1.8.9-horse-stats.json`
+  * change the `id` field in 1.8.9-horse-stats.json from `1.8.9` to `1.8.9-horse-stats`
+* Right click and `open archive` on `1.8.9-horse-stats.jar` with 7zip
+* delete `META-INF` folder
+* drag `azb.class` into archive, then close 7zip
 * create a new profile in minecraft using version 1.8.9-horse-stats
 * play minecraft using new profile
 
 ## Development
 
-I used the [Mod Coder Pack] to modify the class.
+I used the [Mod Coder Pack](http://www.modcoderpack.com) to modify the class.
 
 * Run decompile.bat
 * Modify src\minecraft\net\minecraft\client\gui\inventory\GuiScreenHorseInventory.java
